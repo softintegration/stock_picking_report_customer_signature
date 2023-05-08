@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template inherit_id="stock.report_delivery_document" id="report_delivery_document_inherited">
+        <xpath expr="//div[hasclass('page')]" position="after">
+            <div t-if="o.picking_type_id.report_display_customer_signature" class="last-page row col-xs-5" style="margin-top:350px !important;float:left !important;">
+                <h5><b>Customer signature</b></h5>
+            </div>
+        </xpath>
+
+    </template>
+
+</odoo>
